@@ -11,4 +11,10 @@ class Brand extends Model
         'name',
         'nationality',
     ];
+
+    public function cars(){ //creiamo le relazioni: da brand a cars relazione( a molti)
+
+        return $this -> hasMany(Car::class);
+    }
+
 }

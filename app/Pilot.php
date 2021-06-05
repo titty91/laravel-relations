@@ -13,4 +13,9 @@ class Pilot extends Model
         'nationality',
         'date_of_birth',
     ];
+
+    
+    public function cars(){ //creiamo le relazioni: da pilot a car relazione(molti a molti)
+
+        return $this -> belongesToMany(Car::class);
 }
